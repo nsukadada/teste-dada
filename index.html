@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+
+        let dataAtual = new Date(),
+        nome=prompt("qual e seu nome");
+
+        if(dataAtual.getHours() < 12){
+            alert("bom dia "+nome);
+        }else{
+            if(dataAtual.getHours()< 18){
+                alert("Boa tarde "+nome);
+            }else{
+                alert("bao noite "+nome)
+            }
+        }
+
+        function mostraHora(){
+            let dataAtual = new Date();
+            alert(dataAtual.getHours() + ":" + dataAtual.getMinutes() + ":" +dataAtual.getSeconds());
+        }
+    </script>
+</head>
+<body>
+    <button onclick="mostraHora()">QUE HORAS SAO</button>
+</body>
+</html>
